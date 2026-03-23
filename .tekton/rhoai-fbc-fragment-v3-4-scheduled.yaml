@@ -6,7 +6,7 @@ metadata:
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "rhoai-3.4" && "schedule/catalog-tekton-trigger.txt".pathChanged()
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "rhoai-3.5" && "schedule/catalog-tekton-trigger.txt".pathChanged()
   labels:
     appstudio.openshift.io/application: rhoai-v3-4
     appstudio.openshift.io/component: rhoai-fbc-fragment-v3-4
@@ -45,7 +45,7 @@ spec:
   - name: build-type
     value: "nightly"   # Possible values: 'nightly', 'stage', 'ci'
   - name: rhoai-version
-    value: "3.4.0"
+    value: "3.5.0"
   - name: workflow_url
     value: "https://github.com/red-hat-data-services/conforma-reporter/actions/workflows/conforma-reporter.yaml"
   - name: smoke_url
