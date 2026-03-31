@@ -1,0 +1,3 @@
+# Placeholder for pathChanged() triggers (FBC / catalog pipelines).
+# Created by release_main automation at 2026-03-31T05:56:04Z (UTC).
+train=rhoai-3.4
